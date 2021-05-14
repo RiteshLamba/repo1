@@ -24,7 +24,7 @@ function linkGenerator(error, response, body) {
 }
 
 function getTopicPage(name, url) {
-  //give topic's project's name and their links
+  //gives topic's project's name and their links
   request(url, function (error, res, body) {
     if (!error && res.statusCode == 200) {
       $ = cheerio.load(body);
